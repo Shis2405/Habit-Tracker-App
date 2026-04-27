@@ -180,12 +180,13 @@ Frontend runs on `http://localhost:5173`
 4. Deploy!
 
 ## 📸 Screenshots
+<img width="1235" height="734" alt="image" src="https://github.com/user-attachments/assets/1de9835c-8cd9-4e31-b8f7-aab9dbbfbdf9" />
 
 ### Login Page
-![Login Page](<img width="1262" height="875" alt="image" src="https://github.com/user-attachments/assets/cad28018-b62f-4494-8f60-9b36e50de9c2" />)
+<img width="1262" height="875" alt="image" src="https://github.com/user-attachments/assets/19e2a5de-cfae-4450-b0f1-d40ac9c56611" />
+
 
 ### Dashboard
-![Dashboard](<img width="1169" height="738" alt="image" src="https://github.com/user-attachments/assets/4ae86622-d68f-4ada-a5e7-8389ca4ddf6d" />)
 
 
 ## 🤝 Contributing
