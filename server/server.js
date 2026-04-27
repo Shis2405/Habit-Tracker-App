@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 
-// Only load .env file in development
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
@@ -13,7 +12,15 @@ const habitRoutes = require('./src/routes/habitRoutes');
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: [
+    'http://localhost:5173',
+    'https://habit-tracker-app-three-chi.vercel.app'
+  ],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -25,4 +32,3 @@ app.use('/api/habits', habitRoutes);
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-app.use(cors());
