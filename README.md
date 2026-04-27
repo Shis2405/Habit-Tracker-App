@@ -182,10 +182,11 @@ Frontend runs on `http://localhost:5173`
 ## 📸 Screenshots
 
 ### Login Page
-![Login Page]([https://via.placeholder.com/800x400?text=Login+Page](https://habit-tracker-app-three-chi.vercel.app/login)
+![Login Page](<img width="1262" height="875" alt="image" src="https://github.com/user-attachments/assets/cad28018-b62f-4494-8f60-9b36e50de9c2" />)
 
 ### Dashboard
-![Dashboard]([https://via.placeholder.com/800x400?text=Dashboard](https://habit-tracker-app-three-chi.vercel.app/dashboard)
+![Dashboard](<img width="1169" height="738" alt="image" src="https://github.com/user-attachments/assets/4ae86622-d68f-4ada-a5e7-8389ca4ddf6d" />)
+
 
 ## 🤝 Contributing
 
