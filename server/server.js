@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const dotenv = require('dotenv');
 
-dotenv.config();
+// Only load .env file in development
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 require('./src/config/firebase');
 
