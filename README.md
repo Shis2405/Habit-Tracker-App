@@ -182,10 +182,10 @@ Frontend runs on `http://localhost:5173`
 ## 📸 Screenshots
 
 ### Login Page
-![Login Page](https://via.placeholder.com/800x400?text=Login+Page)
+![Login Page]([https://via.placeholder.com/800x400?text=Login+Page](https://habit-tracker-app-three-chi.vercel.app/login)
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard)
+![Dashboard]([https://via.placeholder.com/800x400?text=Dashboard](https://habit-tracker-app-three-chi.vercel.app/dashboard)
 
 ## 🤝 Contributing
 
