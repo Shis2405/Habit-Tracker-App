@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+/* Auth */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.auth-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.auth-card h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.auth-card h2 { font-size: 1.2rem; color: #666; margin-bottom: 1.5rem; }
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-card input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-card input:focus { border-color: #6366f1; }
+
+.auth-card button {
+  padding: 0.8rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-card button:hover { background: #4f46e5; }
+.auth-card button:disabled { background: #a5b4fc; cursor: not-allowed; }
+.auth-card p { margin-top: 1rem; text-align: center; color: #666; }
+.auth-card a { color: #6366f1; text-decoration: none; font-weight: 600; }
+
+/* Dashboard */
+.dashboard { max-width: 800px; margin: 0 auto; padding: 2rem; }
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 { font-size: 1.8rem; }
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #666;
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover { background: #e2e8f0; }
+
+/* Add Habit Form */
+.add-habit-form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.add-habit-form h2 { margin-bottom: 1rem; font-size: 1.1rem; }
+
+.add-habit-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.add-habit-form input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.add-habit-form input[type="text"]:focus { border-color: #6366f1; }
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.color-picker input { width: 40px; height: 36px; border: none; cursor: pointer; }
+
+.add-habit-form button {
+  padding: 0.7rem 1.5rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.add-habit-form button:hover { background: #4f46e5; }
+
+/* Habits List */
+.habits-list h2 { margin-bottom: 1rem; font-size: 1.1rem; }
+
+.habit-card {
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.habit-card:hover { transform: translateY(-2px); }
+.habit-card.completed { opacity: 0.7; background: #f8fffe; }
+
+.habit-info h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+.habit-info p { font-size: 0.85rem; color: #888; }
+
+.frequency {
+  font-size: 0.75rem;
+  background: #f0f2f5;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  color: #666;
+  margin-top: 0.3rem;
+  display: inline-block;
+}
+
+.habit-actions { display: flex; gap: 0.5rem; align-items: center; }
+
+.complete-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background: #f0f2f5;
+  transition: background 0.2s;
+}
+
+.complete-btn.done { background: #dcfce7; color: #16a34a; }
+.complete-btn:hover { background: #e2e8f0; }
+
+.delete-btn {
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover { background: #fee2e2; }
+
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.empty { color: #888; text-align: center; padding: 2rem; }
+.loading { text-align: center; padding: 2rem; color: #888; }
